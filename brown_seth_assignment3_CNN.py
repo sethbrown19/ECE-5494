@@ -74,7 +74,7 @@ def evaluate_model(dataX, dataY, n_folds=2):
 		# stores scores
 		scores.append(acc)
 		histories.append(history)
-	endTimer = timer()
+	endTime = timer()
 	print ('It took ', (endTime - startTime)/60, ' minutes to train the model.')
 	return scores, histories
 
